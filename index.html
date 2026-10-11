@@ -5,21 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./index.css"/>
+    <link href="./src/index.css" type="text/css" rel="stylesheet" />
     <title>Namaste React</title>
 </head>
 
 <body>
-    <h1>Hello Top of Root</h1>
+    <!-- <h1>Hello Top of Root</h1> -->
     <div id="root">
-    
+        <h1>Not Rendered</h1>
     </div>
-    <h1>Hello Bottom of Root</h1>
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 
-    <script src="./app.js"></script>
+    
+    
+    <!-- <h1>Hello Bottom of Root</h1> -->
+
+    <script type="module" src="./src/App.js"></script>
+    <!-- <script type="module" src="./intial-app.js"></script> -->
     <!-- <script src="./app.js"></script> -->
+
+    <!-- Note: The following script tags for React and ReactDOM are commented out because the project is using Parcel as a bundler,
+     which will handle the inclusion of these libraries automatically. -->
+     
+    <!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> -->
 
 </body>
 

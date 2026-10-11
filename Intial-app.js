@@ -1,3 +1,10 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+// To make our project know that we are using React we need to import React and ReactDOM libraries in our project.
+//  since remove cdn links from index.html file. 
+// React is used to create the elements and ReactDOM is used to render the elements on the screen.
+
 const heading = React.createElement("h1", { id: 'heading' }, "Hello World from React !");
 
 // This {} is used to attributes to the element llike className, id, style, etc.
@@ -15,8 +22,8 @@ console.log(heading); // Returns object representation of the element.
 
 const parent = React.createElement("div", { id: 'parent' },
     React.createElement("div", { id: 'child' }, [
-        React.createElement("h1", {}, "I am h1 tag"),
-        React.createElement("h2", {}, "I am h2 tag")
+        React.createElement("h1", {key: 'h1'}, "I am h1 tag"),
+        React.createElement("h2", {key: 'h2'}, "I am h2 tag")
     ]));
 
 
